@@ -148,7 +148,7 @@ interface CalculatorState {
 
   function handleEquals(state: CalculatorState): CalculatorState {
     if (!state.operation || !state.previousValue) {
-      return state; // Нечего вычислять
+      return state;
     }
   
     const result = calculateResult(
